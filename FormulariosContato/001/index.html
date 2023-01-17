@@ -10,32 +10,34 @@
 </head>
 <body>
     <div class="container">
-        <h2>Entre em contato e<br/> solicite um orçamento</h2>
-        <div class="line"></div>
+        <div class="title-form">
+            <h2>Entre em contato e<br/> solicite um orçamento</h2>
+            <div class="line"></div>
+        </div>
         <form action="#" method="POST">
             <fieldset>
                 <label for="nome">Nome<sub>*</sub></label>
                 <input type="text" title="Digite seu nome completo" required/>
             </fieldset>
             <fieldset class="flex-input">
-                <div>
+                <div class="line-input">
                     <label for="email">E-mail<sub>*</sub></label>
                     <input type="email" title="Seu e-mail domain@provedor.com.br" required/>
                 </div>
-                <div>
+                <div class="line-input">
                     <label for="telefone">Telefone<sub>*</sub></label>
                     <input type="cel" title="+55 00 0000-0000" required/>
                 </div>
             </fieldset>
             <fieldset class="flex-input">
-                <div>
+                <div class="line-input">
                     <label for="cidade">Cidade<sub>*</sub></label>
                     <input type="text" title="Cidade de onde esta falando" required/>
                 </div>
-                <div>
+                <div class="line-uf">
                     <label for="estado">Estado</label>
                     <select name="escolha-estado">
-                        <option value="cidades"></option>
+                        <option value="estados"></option>
                     </select>
                 </div>
             </fieldset>
