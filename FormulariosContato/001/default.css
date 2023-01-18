@@ -25,6 +25,11 @@
     max-width: 50%;
     margin: auto auto;
     padding: 5% 2%;
+    background-color: azure;
+}
+
+body{
+    background-color: fuchsia;
 }
 
 h1,
