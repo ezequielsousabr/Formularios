@@ -1,22 +1,16 @@
 @import 'mobile.css';
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "NewYork", serif;
     font-size: medium;
     margin: 0 0; padding: 0 0;
     box-sizing: border-box;
+    font-weight: 600;
 }
 
 @font-face{
-    font-family: "kenyan coffee";
-    src:url('../001/kenyan_coffee/kenyan\ coffee\ bd.ttf') 
-            format('ttf'),
-        url('../001/kenyan_coffee/kenyan\ coffee\ bd\ it.ttf') 
-            format('ttf'),
-        url('../001/kenyan_coffee/kenyan\ coffee\ rg.ttf') 
-            format('ttf'),
-        url('../001/kenyan_coffee/kenyan\ coffee\ rg\ it.ttf') 
-            format('ttf');
+    font-family: "NewYork";
+    src:url('./newyork/NewYork\ PERSONAL\ USE.otf');
 }
 
 .title-form{
@@ -104,7 +98,7 @@ textarea{
 }
 
 label,input,textarea{
-    color: #aca8a8;
+    color: #8d8a8a;
 }
 
 input,textarea,select{
