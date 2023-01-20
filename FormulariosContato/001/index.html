@@ -17,27 +17,27 @@
         <form action="#" method="POST">
             <fieldset>
                 <label for="nome">Nome<sub>*</sub></label>
-                <input type="text" title="Digite seu nome completo" required/>
+                <input class="nome" type="text" title="Digite seu nome completo" value="nome" required/>
             </fieldset>
             <fieldset class="flex-input">
                 <div class="line-input">
                     <label for="email">E-mail<sub>*</sub></label>
-                    <input type="email" title="Seu e-mail domain@provedor.com.br" required/>
+                    <input class="email" type="email" title="Seu e-mail domain@provedor.com.br" value="email" required/>
                 </div>
                 <div class="line-input">
                     <label for="telefone">Telefone<sub>*</sub></label>
-                    <input type="cel" title="+55 00 0000-0000" required/>
+                    <input class="telefone" type="cel" title="+55 00 0000-0000" value="telefone" required/>
                 </div>
             </fieldset>
             <fieldset class="flex-input">
                 <div class="line-input">
                     <label for="cidade">Cidade<sub>*</sub></label>
-                    <input type="text" title="Cidade de onde esta falando" required/>
+                    <input class="cidade" type="text" title="Cidade de onde esta falando" value="cidade" required/>
                 </div>
                 <div class="line-uf">
                     <label for="estado">Estado</label>
-                    <select name="escolha-estado">
-                        <option value="estados"></option>
+                    <select class="estado" name="escolha-estado" disabled>
+                        <option value="escolha" selected>uf</option>
                     </select>
                 </div>
             </fieldset>
@@ -47,7 +47,7 @@
             </fieldset>
             <fieldset>
                 <label for="descricao">Conte-nos o que você precisa!</label>
-                <textarea title="Deixe sua mensagem aqui!"></textarea>
+                <textarea id="descricao" title="Deixe sua mensagem aqui!"></textarea>
             </fieldset>
         </form>
         <button type="submit">Enviar</button>
