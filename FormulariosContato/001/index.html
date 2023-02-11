@@ -31,12 +31,12 @@
             </fieldset>
             <fieldset class="flex-input">
                 <div class="line-input">
-                    <label for="cidade">Cidade<sub>*</sub></label>
-                    <input class="cidade" type="text" title="Cidade de onde esta falando" value="cidade" required/>
+                    <label for="cidade">Cidade</label>
+                    <input class="cidade" type="text" title="Preencha sua cidade!" value="cidade" placeholder="Preencha sua cidade!" required/>
                 </div>
                 <div class="line-uf">
                     <label for="estado">Estado</label>
-                    <select class="estado" name="escolha-estado" disabled>
+                    <select class="estado" name="escolha-estado">
                         <option value="escolha" selected>uf</option>
                     </select>
                 </div>
@@ -49,9 +49,9 @@
                 <label for="descricao">Conte-nos o que você precisa!</label>
                 <textarea id="descricao" title="Deixe sua mensagem aqui!"></textarea>
             </fieldset>
+            <button id="enviar" type="submit">Enviar</button>
         </form>
-        <button type="submit">Enviar</button>
     </div>
-    <script src="validador.js"></script>
+    <script src="validadorFormulario.js"></script>
 </body>
 </html>
