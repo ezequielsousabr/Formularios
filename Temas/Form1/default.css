@@ -21,15 +21,31 @@
 }
 
 .container{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     max-width: 50%;
-    margin: auto auto;
+    margin-left: auto;
+    margin-right: 0;
     padding: 5% 2%;
-    background-color: azure;
+}
+
+.container-glob{
+    position: relative;
+}
+
+.background{
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -100;
 }
 
 body{
-    background-color: fuchsia;
+    background-color: black;
 }
 
 h1,
@@ -40,7 +56,7 @@ h5,
 h6{
     font-size: xx-large;
     text-align: left;
-    color: #575454;
+    color: whitesmoke;
     position: relative;
 }
 
@@ -72,7 +88,7 @@ label{
     position: relative;
     font-size: 14px;
     text-align: left;
-    color: #807d7d !important;
+    color: whitesmoke !important;
     text-transform: capitalize;
 }
 
@@ -83,7 +99,7 @@ sub{
     top: -3px;
     bottom: auto;
     font-size: 1.1rem;
-    color: #f33636;
+    color: white;
     margin-left: 2px;
 }
 
@@ -109,12 +125,14 @@ label,input,textarea{
 input,textarea,select{
     border: 1px solid rgba(128, 125, 125, 0.411);
     outline: none;
+    background-color: transparent !important;
 }
 
 input,textarea{
     font-size: 13px;
     padding: 3px 1px;
-    background-color: rgb(248, 247, 247)
+    background-color: rgb(248, 247, 247);
+    color: white !important;
 }
 
 select{
@@ -150,7 +168,7 @@ input,select{
 }
 
 button{
-    background-color:rgba(128, 125, 125, 0.411);
+    background-color: #de1111;
     color: white;
     text-align: center;
     text-transform: capitalize;
@@ -158,7 +176,7 @@ button{
     padding: 8px 12px;
     border-radius: 2px;
     width: 100%;
-    height: 100%;
+    height: 40px;
     max-width: 25%;
     max-height: 5%;
     border: 1px solid #0000;

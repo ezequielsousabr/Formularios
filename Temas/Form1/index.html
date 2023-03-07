@@ -9,48 +9,51 @@
     <title>Formulário Contato - Fale Conosco!</title>
 </head>
 <body>
-    <div class="container">
-        <div class="title-form">
-            <h2>Entre em contato e<br/> solicite um orçamento</h2>
-            <div class="line"></div>
+    <div class="container-glob">
+            <img class="background" src="https://cdn.pixabay.com/photo/2014/12/30/10/39/code-583795_960_720.jpg" alt="fundo do formulário" />
+        <div class="container">
+            <div class="title-form">
+                <h2>Entre em contato e<br/> solicite um orçamento</h2>
+                <div class="line"></div>
+            </div>
+            <form action="#" method="POST">
+                <fieldset>
+                    <label for="nome">Nome<sub>*</sub></label>
+                    <input class="nome" type="text" title="Digite seu nome completo" value="nome" required/>
+                </fieldset>
+                <fieldset class="flex-input">
+                    <div class="line-input">
+                        <label for="email">E-mail<sub>*</sub></label>
+                        <input class="email" type="email" title="Seu e-mail domain@provedor.com.br" value="email" required/>
+                    </div>
+                    <div class="line-input">
+                        <label for="telefone">Telefone<sub>*</sub></label>
+                        <input class="telefone" type="cel" title="+55 00 0000-0000" value="telefone" required/>
+                    </div>
+                </fieldset>
+                <fieldset class="flex-input">
+                    <div class="line-input">
+                        <label for="cidade">Cidade</label>
+                        <input class="cidade" type="text" title="Preencha sua cidade!" value="cidade" placeholder="Preencha sua cidade!" required/>
+                    </div>
+                    <div class="line-uf">
+                        <label for="estado">Estado</label>
+                        <select class="estado" name="escolha-estado">
+                            <option value="escolha" selected>uf</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label for="empresa">Empresa</label>
+                    <input type="text" title="Nome da sua empresa - Opcional" />
+                </fieldset>
+                <fieldset>
+                    <label for="descricao">Conte-nos o que você precisa!</label>
+                    <textarea id="descricao" title="Deixe sua mensagem aqui!"></textarea>
+                </fieldset>
+                <button id="enviar" type="submit">Enviar</button>
+            </form>
         </div>
-        <form action="#" method="POST">
-            <fieldset>
-                <label for="nome">Nome<sub>*</sub></label>
-                <input class="nome" type="text" title="Digite seu nome completo" value="nome" required/>
-            </fieldset>
-            <fieldset class="flex-input">
-                <div class="line-input">
-                    <label for="email">E-mail<sub>*</sub></label>
-                    <input class="email" type="email" title="Seu e-mail domain@provedor.com.br" value="email" required/>
-                </div>
-                <div class="line-input">
-                    <label for="telefone">Telefone<sub>*</sub></label>
-                    <input class="telefone" type="cel" title="+55 00 0000-0000" value="telefone" required/>
-                </div>
-            </fieldset>
-            <fieldset class="flex-input">
-                <div class="line-input">
-                    <label for="cidade">Cidade</label>
-                    <input class="cidade" type="text" title="Preencha sua cidade!" value="cidade" placeholder="Preencha sua cidade!" required/>
-                </div>
-                <div class="line-uf">
-                    <label for="estado">Estado</label>
-                    <select class="estado" name="escolha-estado">
-                        <option value="escolha" selected>uf</option>
-                    </select>
-                </div>
-            </fieldset>
-            <fieldset>
-                <label for="empresa">Empresa</label>
-                <input type="text" title="Nome da sua empresa - Opcional" />
-            </fieldset>
-            <fieldset>
-                <label for="descricao">Conte-nos o que você precisa!</label>
-                <textarea id="descricao" title="Deixe sua mensagem aqui!"></textarea>
-            </fieldset>
-            <button id="enviar" type="submit">Enviar</button>
-        </form>
     </div>
     <script src="validadorFormulario.js"></script>
 </body>
