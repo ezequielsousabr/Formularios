@@ -181,6 +181,7 @@ button{
     max-height: 5%;
     border: 1px solid #0000;
     cursor: pointer;
+    margin-top: 3%;
 }
 
 button:hover{
