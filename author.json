@@ -1,16 +1,12 @@
 {
-    "InformacoesAutor":[
+    "author":[
         {
-            "Nome": "Ezequiel L Sousa",
-            "Descricao": "Formulário em html css e javascript para Websites",
-            "Profissao": "Freelancer",
-            "RedesSociais":[
+            "developer web": "ezequiel l sousa",
+            "description": "formulários em html css javascript",
+            "socialnetworks":[
                 {
-                    "Instagram": "www.instagram.com/ezequielsousaspbr",
-                    "Facebook": "",
-                    "Twitter": "",
-                    "Youtube": "",
-                    "Site": ""
+                    "instagram": "www.instagram.com/ezequielsousaspbr",
+                    "linkedin": "www.linkedin.com/in/ezequielsousabr"
                 }
             ]
         }
