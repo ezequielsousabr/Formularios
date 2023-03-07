@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadastre-se em nosso formulário">
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg">
+    <meta property="og:locale" content="pt-br">
+    <meta property="og:title" content="Cadastre-se">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:80">
+    <link rel="icon" href="./assets/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+    <title>Cadastre-se | Aprenda a programar em até 12 meses</title>
+
+    <style>
+
+    @font-face{
+        font-family: "Boheamian Soul";
+        src: url('./assets/Fonts/bohemian_soul/Bohemian\ Soul.otf')
+    }
+
+    @font-face{
+        font-family: "Times new";
+        src: url('./assets/Fonts/times_new_normal/Times\ New\ Normal\ Regular.ttf')
+    }
+
+        *{margin: 0; padding: 0}
+
+        html,body{
+            box-sizing: border-box;
+            font-family: "Times new", serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6{
+            font-family: "Boheamian Soul", serif;
+            color: white;
+            font-size: xx-large;
+            text-transform: capitalize;
+        }
+
+        h2{
+            font-size: x-large !important;
+        }
+
+        p{
+            font-family: "Times new", serif;
+            color: white;
+            font-weight: 400;
+        }
+
+        span{
+            color: white;
+        }
+
+        a {
+            font-family: "Times new", serif;
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .color-degrade{
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(25,25,25,0.6);
+        }
+
+        .cdnpixabay{
+            display: block;
+            position: absolute;
+            background-size: cover;
+            background-position: center;
+            background-attachment: local;
+            background-repeat: no-repeat;
+            background-color: black;
+            z-index: -100;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            margin: auto auto;
+            justify-content: center;
+            max-width: 30%;
+            gap: 25px 20px;
+        }
+
+        input {
+         font-family: "Times new", serif;
+         font-weight: 500;
+         font-size: 15px;
+         outline: none;
+         padding: 1px 2px;
+         width: 100%;
+         height: 30px;
+         background-color: transparent;
+         color:rgba(255, 255, 255, 0.8);
+         border: none;
+        }
+
+        input[type='placeholder']{
+            color: rgba(255,255,255,0.7)
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            max-width: 30%;
+            background-color: transparent;
+            border: 1px solid rgba(255,255,255,0.9);
+            color: white;
+            text-align: center;
+            padding: 2% 3%;
+            margin: 2% auto;
+        }
+
+        button:active{
+            transform: scale(1.1);
+            transition: ease-out .1s;
+            background-color: white;
+            color: black;
+        }
+
+        .logotipo{
+            padding: 3% 2%;
+        }
+
+        .color-background{
+            background-color: white;
+            padding: 1%;
+            color: black;
+            word-spacing: -2px;
+        }
+
+        .bi{
+            font-size: 22px;
+            color: white;
+            padding: 1%;
+        }
+
+        .flexibles{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            gap: 5px 10px;
+            width: 100%;
+        }
+
+        .campos{
+            border-radius: 1px;
+            border: 1px solid rgba(255,255,255,0.9);
+            background-color: transparent;
+            padding-left: 5px;
+            width: 100%;
+            margin: 5px auto;
+        }
+
+        @media(max-width: 868px){
+            .formulario{
+                max-width: 50%;
+                transform: translateY(25%);
+            }
+        }
+
+        @media(max-width: 1025px) and (orientation: landscape){
+            .color-degrade{
+                height: 100%;
+            }
+
+            .cdnpixabay{
+                width: 100%;
+                height: 100%;
+            }
+
+            .formulario{
+                max-width: 50%;
+                height: 100%;
+                transform: translateY(0)
+            }
+        }
+
+        @media(max-width: 768px){
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6{
+                font-size: x-large;
+            }
+
+            .formulario{
+                max-width: 90%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="color-degrade">
+            <img class="cdnpixabay" src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_960_720.png" alt="Preencha o formulário!" />
+            <div class="formulario">
+                <a class="logotipo" href="#" target="_self">
+                <img src="./assets/img/logotipo-backdoor.png" alt="Logo da sua empresa" /></a>
+                <h1>Aprenda a programar em até 12 meses</h1>
+                <div class="flexibles">
+                    <i class="bi bi-camera-video"></i>
+                    <p class="color-background">+ de 200 horas em vídeo aulas para você!</p>
+                </div>
+
+                <div>
+                    <h2>Faça seu cadastro!</h2>
+                    <form method="POST" action="https://formspree.io/f/xoqpzgjw">
+                        <div class="flexibles campos">
+                            <i class="bi bi-person-fill"></i>
+                            <input type="text" name="nome" aria-placeholder="Digite aqui seu nome completo!" placeholder="Digite seu nome *" required />
+                        </div>
+                        <div class="flexibles campos">
+                            <i class="bi bi-envelope-at"></i>
+                            <input type="email" name="email" aria-placeholder="Informe aqui seu melhor email!" placeholder="Informe seu melhor email *" required />
+                        </div>
+                        <div class="flexibles campos">
+                            <i class="bi bi-telephone"></i>
+                            <input type="tel" name="telefone" aria-placeholder="Informe aqui seu telefone ou celular!" placeholder="Informe seu telefone/celular *" required />
+                        </div>
+                        <button>Enviar</button>
+                    </form>
+                </div>
+                <p>Para dúvidas, envie email para <a href="mailto:elsbusiness@outlook.com"><span class="__cf_email__" data-cfemail="#">[email&#160;protected]</span></a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
