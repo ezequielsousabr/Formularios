@@ -1,5 +1,9 @@
 @import 'mobile.css';
 
+html,body{
+    height: 100%;
+}
+
 *{
     font-family: "NewYork", serif;
     font-size: medium;
@@ -25,13 +29,22 @@
     flex-direction: column;
     align-items: stretch;
     max-width: 50%;
+    width: 100%;
     margin-left: auto;
     margin-right: 0;
     padding: 5% 2%;
 }
 
 .container-glob{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
+    background: rgb(36,23,255);
+    background: linear-gradient(114deg, rgba(36,23,255,0.5) 13%, rgba(138,150,219,0.5) 100%); 
+    max-height: auto;
+    height: 100%;
 }
 
 .background{
@@ -42,10 +55,8 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: -100;
-}
-
-body{
-    background-color: black;
+    height: 100%;
+    object-fit: cover;
 }
 
 h1,
@@ -178,7 +189,6 @@ button{
     width: 100%;
     height: 40px;
     max-width: 25%;
-    max-height: 5%;
     border: 1px solid #0000;
     cursor: pointer;
     margin-top: 3%;
