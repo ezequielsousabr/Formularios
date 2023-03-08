@@ -16,45 +16,45 @@
                 <h2>Entre em contato e<br/> solicite um orçamento</h2>
                 <div class="line"></div>
             </div>
-            <form action="#" method="POST">
+            <form action="https://formspree.io/f/xyyapglq" method="POST">
                 <div>
                     <label for="nome" aria-label="Campo para informar seu nome completo">Nome<sub>*</sub></label>
-                    <input class="nome" type="text" title="Digite seu nome completo" aria-placeholder="Digite seu nome completo aqui!" placeholder="Digite seu nome" required/>
+                    <input class="nome" name="nome" type="text" title="Digite seu nome completo" aria-placeholder="Digite seu nome completo aqui!" placeholder="Digite seu nome" required/>
                 </div>
                 <div class="flex-input">
                     <div class="line-input">
                         <label for="email" aria-label="Campo para informar seu melhor email">E-mail<sub>*</sub></label>
-                        <input class="email" type="email" title="Seu e-mail domain@provedor.com.br" aria-placeholder="Informe seu melhor email aqui!" placeholder="Seu email" required/>
+                        <input class="email" name="email" type="email" title="Seu e-mail domain@provedor.com.br" aria-placeholder="Informe seu melhor email aqui!" placeholder="Seu email" required/>
                     </div>
                     <div class="line-input">
                         <label for="telefone" aria-label="Campo para informar seu melhor telefone ou celular">Telefone<sub>*</sub></label>
-                        <input class="telefone" type="cel" title="+55 00 0000-0000" aria-placeholder="Informar seu melhor telefone aqui!" placeholder="Seu telefone" required/>
+                        <input class="telefone" name="telefone" type="cel" title="+55 00 0000-0000" aria-placeholder="Informar seu melhor telefone aqui!" placeholder="Seu telefone" required/>
                     </div>
                 </div>
                 <div class="flex-input">
                     <div class="line-input">
                         <label for="cidade" aria-label="Campo para informar sua cidade">Cidade</label>
-                        <input class="cidade" type="text" title="Preencha sua cidade!" aria-placeholder="Informar sua cidade aqui!" placeholder="Informe sua cidade" required/>
+                        <input class="cidade" name="cidade" type="text" title="Preencha sua cidade!" aria-placeholder="Informar sua cidade aqui!" placeholder="Informe sua cidade" required/>
                     </div>
                     <div class="line-uf">
                         <label for="estado" aria-label="Campo para selecionar o estado uf campo preenchido automaticamente ao informar a cidade">Estado</label>
-                        <select class="estado" name="escolha-estado">
+                        <select class="estado" name="estado/uf">
                             <option value="escolha" aria-selected="true" selected>uf</option>
                         </select>
                     </div>
                 </div>
                 <div>
                     <label for="empresa" aria-label="Campo para informar o nome da sua empresa ou cadastro de pessoa juridica opcional">Empresa</label>
-                    <input type="text" title="Opcional" aria-placeholder="Informe o nome da sua empresa ou cnpj" />
+                    <input type="text" name="organizacao/empresa" title="Opcional" aria-placeholder="Informe o nome da sua empresa ou cnpj" />
                 </div>
                 <div>
                     <label for="descricao" aria-label="Campo para escrever resumidamente sua questão ou pergunta">Conte-nos o que você precisa!</label>
-                    <textarea id="descricao" title="Opcional" aria-placeholder="Escreva sua mensagem aqui" placeholder="Escreva sua mensagem..."></textarea>
+                    <textarea id="descricao" name="descricao" title="Opcional" aria-placeholder="Escreva sua mensagem aqui" placeholder="Escreva sua mensagem..."></textarea>
                 </div>
                 <button id="enviar" type="submit">Enviar</button>
             </form>
         </div>
     </div>
-    <script src="validadorFormulario.js"></script>
+    <!--<script src="validadorFormulario.js"></script>-->
 </body>
 </html>
