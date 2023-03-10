@@ -38,8 +38,8 @@ ul,li{
 label{
     font-family: 'Source Sans Pro', sans-serif;
     color: rgb(48, 47, 47);
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 900;
     text-transform: uppercase;
 }
 
@@ -174,7 +174,7 @@ p small{
 }
 
 .defaultCreditCard{
-    background-color: black;
+    background-color: rgb(44, 42, 42);
     padding: 10px;
 }
 
@@ -183,9 +183,18 @@ p small{
     color: rgb(37, 247, 37);
 }
 
+.bi-cash{
+    font-size: 55px;
+    color: white;
+}
+
 .bi-credit-card-fill{
     font-size: 20rem;
     color: white;
+}
+
+.bi-credit-card-fill::before, .bi-cash::before{
+    transform: skewY(-20deg) !important;
 }
 
 .dashboardTitle{
@@ -223,6 +232,25 @@ p small{
 .lineAuto{
     color: rgb(37, 247, 37);
     font-size: x-large;
+}
+
+.headerLineFlex{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px 10px;
+    padding: 10px;
+}
+
+.validateCvvInlineFlex{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.campoInlineParcelamentsFlex{
+    width: 50%;
 }
 
 .flexColumnTwe{

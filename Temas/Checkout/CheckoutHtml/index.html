@@ -11,7 +11,10 @@
 <body>
     <div class="dashboardpagaments">
         <header class="lineHeader">
-            <h2 class="dashboardTitle">Informações de pagamento</h2>
+            <div class="headerLineFlex">
+                <i class="bi bi-cash"></i>
+                <h2 class="dashboardTitle">Informações de pagamento</h2>
+            </div>
         </header>
         <section class="columnOne">
             <div class="flexColumnsOne">
@@ -100,15 +103,17 @@
                             <label for="Nome do titular" aria-label="Nome do titular">Nome do titular</label>
                             <input type="text" aria-placeholder="Informações do titular do cartão nome" placeholder="Nome do titular do cartão" required aria-required="true" />
                         </div>
-                        <div id="ValidadeCartao">
-                            <label for="Validade do Cartão" aria-label="Validade do cartão de crédito">Validade</label>
-                            <input type="number" aria-placeholder="Informações da validade do cartão de crédito" placeholder="01/12" required aria-required="true" />
+                        <div class="validateCvvInlineFlex">
+                            <div id="ValidadeCartao">
+                                <label for="Validade do Cartão" aria-label="Validade do cartão de crédito">Validade</label>
+                                <input type="number" aria-placeholder="Informações da validade do cartão de crédito" placeholder="01/12" required aria-required="true" />
+                            </div>
+                            <div id="CodigoCvv">
+                                <label for="Cod. de segurança" aria-label="Código de segurança do cartão">Cód. de segurança</label>
+                                <input type="number" aria-placeholder="Informações do código de segurança do seu cartão de crédito" placeholder="CVV" required aria-required="true" />
+                            </div>
                         </div>
-                        <div id="CodigoCvv">
-                            <label for="Cod. de segurança" aria-label="Código de segurança do cartão">Cód. de segurança</label>
-                            <input type="number" aria-placeholder="Informações do código de segurança do seu cartão de crédito" placeholder="CVV" required aria-required="true" />
-                        </div>
-                        <div id="Parcelas">
+                        <div id="Parcelas" class="campoInlineParcelamentsFlex">
                             <label for="Parcelas" aria-label="Quantidade de parcelas">Parcelas</label>
                             <input type="number" aria-placeholder="Informações da quantidade de parcelas a realizar" placeholder="1" required aria-required="true" />
                         </div>
