@@ -2,7 +2,7 @@
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 2fr 2fr;
-    gap: 20px 25px;
+    gap: 20px 10px;
     grid-template-areas:
         "lineHeader"
         "columnOne"
@@ -25,4 +25,16 @@
 
 .columnThree{
     grid-area: 2 / 3 / 2 / 3;
+}
+
+.columnOne,
+.columnTwe,
+.columnThree{
+    border: 1px solid rgb(211, 208, 208);
+    padding: 10px;
+}
+
+.columnOne,
+.columnThree{
+    margin: 0 10px;
 }

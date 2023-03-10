@@ -27,6 +27,7 @@ body{
 
 figure, img{
     width: 100% !important;
+    object-fit: cover;
 }
 
 ul,li{
@@ -39,6 +40,7 @@ label{
     color: rgb(48, 47, 47);
     font-size: 18px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 address{
@@ -121,6 +123,11 @@ p small{
     transition: ease-in .1s;
 }
 
+.descontsNewletters{
+    margin-top: 30%;
+    margin-bottom: auto;
+}
+
 .descontsNewletters h4{
     font-size: x-large;
     font-weight: 600;
@@ -137,7 +144,6 @@ p small{
 
 .pagamentEnv, .desconts{
     padding: 2px 1px;
-    width: 90%;
     height: 40px;
     border-radius: 4px;
 }
@@ -167,6 +173,11 @@ p small{
     font-weight: 500;
 }
 
+.defaultCreditCard{
+    background-color: black;
+    padding: 10px;
+}
+
 .bi{
     font-size: 14px;
     color: rgb(37, 247, 37);
@@ -175,10 +186,6 @@ p small{
 .bi-credit-card-fill{
     font-size: 20rem;
     color: white;
-    background-color: black;
-    padding: 10px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
 }
 
 .dashboardTitle{
@@ -246,7 +253,6 @@ p small{
 
 .totalResultParc{
     border: 1px solid rgb(230, 225, 225);
-    margin-left: 8%;
 }
 
 .parcelaments{
