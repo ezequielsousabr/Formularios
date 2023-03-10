@@ -1,0 +1,270 @@
+@import 'layout.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+@font-face{
+    font-family: "Designer";
+    src: url('../Fonts/designer_2/Designer.otf');
+}
+
+*{margin: 0; padding: 0}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "Designer";
+}
+
+html,
+body{
+    box-sizing: border-box;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+figure, img{
+    width: 100% !important;
+}
+
+ul,li{
+    font-family: 'Source Sans Pro', sans-serif;
+    list-style: none !important;
+}
+
+label{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(48, 47, 47);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+address{
+    font-size: small;
+}
+
+button,
+input{
+    font-family: 'Source Sans Pro', sans-serif !important;
+    border: 1px solid rgb(211, 208, 208);
+    width: 100%;
+    font-size: 18px;
+    color: rgb(66, 65, 65);
+}
+
+input{
+    border-radius: 2px;
+    outline: none;
+    height: 50px;
+    font-size: 22px;
+}
+
+input[type="placeholder"]{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200 !important;
+}
+
+table{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+th{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: x-large;
+    font-weight: 900;
+}
+
+td{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+}
+
+a{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: green;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(2, 216, 2);
+}
+
+figcaption{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: italic;
+}
+
+p small{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    color: grey;
+}
+
+.pagamentEnv{
+    border: 1px solid green;
+    background-color: rgb(37, 247, 37);
+    color: #000000;
+    font-size: 16px;
+    height: 50px !important;
+    font-weight: 600;
+}
+
+.pagamentEnv:hover{
+    background-color: rgb(2, 216, 2);
+    color: white;
+    transition: ease-in .1s;
+}
+
+.descontsNewletters h4{
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.descontsNewletters p{
+    font-size: 14px;
+}
+
+.desconts{
+    border: 1px solid rgb(48, 47, 47);
+    margin-top: 5%;
+}
+
+.pagamentEnv, .desconts{
+    padding: 2px 1px;
+    width: 90%;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.totalparclist{
+    margin-left: 24%;
+}
+
+.parcelaments{
+    background-color: rgb(253, 253, 253);
+}
+
+.totalparc{
+    background-color: rgb(248, 245, 245);
+    padding: 4px;
+}
+
+.totalparc,
+.valor{
+    font-weight: 600;
+    color: black;
+}
+
+.quant{
+    color: rgb(37, 247, 37);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bi{
+    font-size: 14px;
+    color: rgb(37, 247, 37);
+}
+
+.bi-credit-card-fill{
+    font-size: 20rem;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.dashboardTitle{
+    font-size: xx-large;
+    text-transform: capitalize;
+    text-align: left;
+    padding: 20px 10px;
+    color: white;
+    font-weight: 800;
+}
+
+.ResultColumns{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.informations h2{
+    color: rgb(247, 55, 55);
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: 8%;
+}
+
+.headerColumns{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 10px 5px;
+}
+
+.lineAuto{
+    color: rgb(37, 247, 37);
+    font-size: x-large;
+}
+
+.flexColumnTwe{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.flexColumnsOne{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px 10px;
+}
+
+.contactItemsLine{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px 5px;
+}
+
+.totalResultLine{
+    background-color: rgb(253, 253, 253);
+}
+
+.totalResultParc{
+    border: 1px solid rgb(230, 225, 225);
+    margin-left: 8%;
+}
+
+.parcelaments{
+    padding-left: 3%;
+}
+
+.formCampos{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 15px;
+}
+
+.pagamentMessageEnd{
+    text-align: center;
+}
+
+.brasil{
+    width: 30px !important;
+    margin: auto;
+}

@@ -1,0 +1,28 @@
+.dashboardpagaments{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 20px 25px;
+    grid-template-areas:
+        "lineHeader"
+        "columnOne"
+        "columnTwe"
+        "columnThree";
+}
+
+.lineHeader{
+    grid-area: 1 / 1 / 1 / 4;
+    background-color: rgb(39, 37, 37);
+}
+
+.columnOne{
+    grid-area: 2 / 1 / 2 / 1;
+}
+
+.columnTwe{
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+.columnThree{
+    grid-area: 2 / 3 / 2 / 3;
+}
