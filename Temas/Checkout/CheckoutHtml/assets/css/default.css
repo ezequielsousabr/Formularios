@@ -176,6 +176,7 @@ p small{
 .defaultCreditCard{
     background-color: rgb(44, 42, 42);
     padding: 10px;
+    width: 250px;
 }
 
 .bi{
@@ -191,10 +192,6 @@ p small{
 .bi-credit-card-fill{
     font-size: 20rem;
     color: white;
-}
-
-.bi-credit-card-fill::before, .bi-cash::before{
-    transform: skewY(-20deg) !important;
 }
 
 .dashboardTitle{

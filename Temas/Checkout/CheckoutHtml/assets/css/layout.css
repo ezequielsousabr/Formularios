@@ -1,7 +1,7 @@
 .dashboardpagaments{
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr;
     gap: 20px 10px;
     grid-template-areas:
         "lineHeader"
