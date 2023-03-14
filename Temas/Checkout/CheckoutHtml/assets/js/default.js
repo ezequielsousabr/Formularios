@@ -1,5 +1,6 @@
 let CamposTag = document.getElementsByTagName('input');
 let EnviarPagamento = document.getElementById('pgamentsbuttonenv');
+let Parcelaments = document.querySelectorAll('.parcelaments');
 
 const NumeroCartao = new Number(CamposTag[0].value.length);
 const Nome = new String(CamposTag[1].value);
@@ -10,6 +11,13 @@ function ErrorCampos(){
 
 	for(let cont = 0; cont <= CamposTag.length; cont++){
 		CamposTag[cont].style.border = "1px solid red";
+	}
+}
+
+function ParcelamentsList(list){
+	let i;
+	for(i = 0; i <= Parcelaments.length; i++){
+		console.log(Parcelaments[i])
 	}
 }
 
